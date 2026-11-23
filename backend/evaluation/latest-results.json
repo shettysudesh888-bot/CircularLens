@@ -1,0 +1,101 @@
+{
+  "dataset_circulars": 4,
+  "reference_categories": 15,
+  "baseline_pattern": {
+    "precision": 1.0,
+    "recall": 0.7333333333333333,
+    "f1": 0.846153846153846,
+    "tp": 11,
+    "predicted": 11,
+    "expected": 15
+  },
+  "gemini_structured": {
+    "precision": 0.9166666666666666,
+    "recall": 0.7333333333333333,
+    "f1": 0.8148148148148148,
+    "tp": 11,
+    "predicted": 12,
+    "expected": 15
+  },
+  "source_evidence_correct": 12,
+  "gemini_predictions": 12,
+  "relationship_accuracy": {
+    "correct": 1,
+    "total": 1
+  },
+  "eligibility_accuracy": {
+    "correct": 5,
+    "total": 5
+  },
+  "need_verification_correct": 2,
+  "gemini_latency_seconds": {
+    "mean": 15.225447450000502,
+    "samples": 4
+  },
+  "per_document": {
+    "pattern": {
+      "original": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ],
+      "revision": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ],
+      "exception": [
+        "attendance"
+      ],
+      "ambiguous": []
+    },
+    "gemini": {
+      "original": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ],
+      "revision": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ],
+      "exception": [
+        "required_documents"
+      ],
+      "ambiguous": [
+        "eligibility"
+      ]
+    }
+  },
+  "eligibility_cases": [
+    {
+      "expected": "ELIGIBLE",
+      "actual": "ELIGIBLE"
+    },
+    {
+      "expected": "ELIGIBLE",
+      "actual": "ELIGIBLE"
+    },
+    {
+      "expected": "NOT ELIGIBLE",
+      "actual": "NOT ELIGIBLE"
+    },
+    {
+      "expected": "NEEDS VERIFICATION",
+      "actual": "NEEDS VERIFICATION"
+    },
+    {
+      "expected": "NEEDS VERIFICATION",
+      "actual": "NEEDS VERIFICATION"
+    }
+  ]
+}

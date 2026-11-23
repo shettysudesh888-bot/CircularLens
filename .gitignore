@@ -1,0 +1,53 @@
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Runtime application data: databases, vectors, uploads, backups, and demos
+backend/data/
+backend/evaluation/*.db
+backend/evaluation/e2e-index*/
+backend/evaluation/__pycache__/
+evaluation/*.json
+frontend.zip
+checkpoints/
+# Local one-off diagnostics superseded by backend/tests/test_isolated_workflow.py
+backend/sandbox_auth_test.ps1
+backend/test_auth.py
+backend/test_auth_inprocess.py
+backend/inspect_schema.py
+backend/inspect_schema2.py
+backend/inspect_schema3.py
+
+# Python artifacts
+backend/venv/
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node and frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Logs, temporary files, editor/OS artifacts
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Accidental local route scratch file
+backend/app/routes/temp.txt

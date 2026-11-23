@@ -1,0 +1,111 @@
+{
+  "held_out_circulars": 2,
+  "held_out_reference_categories": 10,
+  "development_circulars_executed": 0,
+  "methods": {
+    "pattern": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.7499999999999999,
+      "true_positive": 6,
+      "false_positive": 0,
+      "false_negative": 4,
+      "condition_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "mean_latency_seconds": 0.026928550003503915
+    },
+    "gemini": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.9473684210526316,
+      "true_positive": 9,
+      "false_positive": 0,
+      "false_negative": 1,
+      "condition_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "mean_latency_seconds": 30.000506399999722
+    },
+    "hybrid": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.9473684210526316,
+      "true_positive": 9,
+      "false_positive": 0,
+      "false_negative": 1,
+      "condition_interpretation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_positive": 2,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "mean_latency_seconds": 7.639301700000942
+    }
+  },
+  "source_evidence": {
+    "gemini": {
+      "correct": 9,
+      "total": 9
+    },
+    "hybrid": {
+      "correct": 9,
+      "total": 9
+    }
+  },
+  "held_out_predictions": {
+    "simple": {
+      "pattern": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ],
+      "gemini": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ],
+      "hybrid": [
+        "attendance",
+        "deadline",
+        "eligibility",
+        "fee",
+        "required_documents"
+      ]
+    },
+    "complex": {
+      "pattern": [
+        "attendance"
+      ],
+      "gemini": [
+        "attendance",
+        "backlog",
+        "exception",
+        "required_documents"
+      ],
+      "hybrid": [
+        "attendance",
+        "backlog",
+        "exception",
+        "required_documents"
+      ]
+    }
+  },
+  "development_predictions": {}
+}
